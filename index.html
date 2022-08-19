@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <meta name="description" content="Shane's Currency Converter Service">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Shane Chaffe">
+
+    <title>Currency Converter</title>
+</head>
+<body>
+
+    <main id="landing">
+        <div id="mainContainer">
+            <h1>Currency Converter</h1>
+            <div id="mainData">
+                <form>
+                    <input id="amount" type="number" placeholder="£1"/>
+                    <select id="primary" class="input"></select>
+                    <select id="secondary" class="input"></select>
+                </form>
+                <div id="displayExchange">
+                    <div id="currencyExchange">
+                        <div id="result">
+                            <h2>Currency</h2>
+                            <p id="from"></p>
+                            <p id="to"></p>
+                        </div>
+                    </div>
+                    <button id="convert">Convert</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="currency.js"></script>
+</body>
+</html>
